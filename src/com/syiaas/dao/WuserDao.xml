@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace和定义的Mapper接口对应，并实现其中的方法 -->
+<mapper namespace="com.syiaas.dao.WuserDao">
+    
+   
+   	<select id="getWuser" resultType="Wuser" parameterType="int">
+        <![CDATA[
+           SELECT * FROM wuser where exhibitionid=#{exhibitionid}
+           
+        ]]>
+    </select> 
+  
+    <select id="getWuserValueName" resultType="Pie" parameterType="int">
+        <![CDATA[
+   
+           SELECT COUNT(*) value,recode name from wuser where exhibitionid=#{exhibitionid} GROUP BY recode
+           
+        ]]>
+    </select> 
+    
+    
+</mapper>

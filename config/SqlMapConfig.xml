@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+		 "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.syiaas.pojo.Hourflow" alias="Hourflow"/>
+		<typeAlias type="com.syiaas.pojo.StaytimeName" alias="StaytimeName"/>
+		<typeAlias type="com.syiaas.pojo.Staytime" alias="Staytime"/>
+		<typeAlias type="com.syiaas.pojo.Sumday" alias="Sumday"/>
+		<typeAlias type="com.syiaas.pojo.ZoneflowName" alias="ZoneflowName"/>
+		<typeAlias type="com.syiaas.pojo.Zoneflow" alias="Zoneflow"/>
+		<typeAlias type="com.syiaas.pojo.ExhibitionInfo" alias="ExhibitionInfo"/>
+	    <typeAlias type="com.syiaas.pojo.Wuser" alias="Wuser"/>
+		<typeAlias type="com.syiaas.pojo.Pie" alias="Pie"/>
+	</typeAliases>
+	
+</configuration>
